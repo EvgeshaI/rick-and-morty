@@ -1,0 +1,88 @@
+.filtersContainer{
+    background-color: #3C3D42;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.filterInputStyle{
+    width: 200px;
+    padding: 7px;
+    margin-top: 10px;
+    font-size: 14px;
+    background: transparent;
+    border: 0.5px solid #F19D38;
+    border-radius: 10px;
+    margin-right: 10px;
+    outline: none;
+    color: #9E9E9F;
+}
+.dropdownsBlock{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dropdownFilterStyle{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto 0;
+    align-items: center;
+    width: 200px;
+    padding: 7px;
+    font-size: 14px;
+    color: #9E9E9F;
+    border: 0.5px solid #F19D38;
+    border-radius: 10px;
+}
+.dropdownContainer{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: #F19D38;
+    top: 100%;
+    left: 0;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.filterName{
+    padding: 10px;
+    color: #282B32;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.filterName:hover{
+    background-color: #F9AB50;
+}
+
+.resetButton{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #F9AB50;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+    color: #9E9E9F;
+}
+
+.searchButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F19D38;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.searchButton:hover{
+    background-color: #F9AB50;
+}
+
+@media all and (max-width: 490px){
+    .filtersContainer{
+        padding: 10px;
+    }
+    .filterInputStyle{
+        margin: 10px auto;
+    }
+}

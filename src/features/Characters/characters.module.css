@@ -1,0 +1,116 @@
+.charactersContainer{
+    min-height: 100vh;
+    background-color: #282B32;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+
+.characterBlock{
+    width: 48%;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: #3C3D42;
+}
+
+.photoStyle{
+    width: 200px;
+    border-radius:  5px 0 0 5px;
+    margin-right: 20px;
+}
+.infoOfCharacter{
+    max-height: 200px;
+    overflow: scroll;
+}
+.nameStyle{
+    margin: 10px 0 10px;
+    font-size: 20px;
+    color: #F19D38;
+    cursor: pointer;
+}
+.nameStyle:hover{
+    color: #F9AB50;
+}
+.statusAndSpecies{
+    display: flex;
+    align-items: center;
+    color: #F5F6F5;
+}
+a{
+    color: #F5F6F5;
+    font-size: 15px;
+    text-decoration: none;
+}
+a:hover{
+    color: #F19D38;
+}
+
+.locationBlock{
+    margin-top: 20px;
+}
+.location{
+    color: #9E9E9F;
+    margin-bottom: 7px;
+    font-size: 12px;
+}
+
+.errorMessageStyle{
+    text-align: center;
+    margin: 20px auto;
+    color: #d1495b;
+}
+
+
+@media all and (max-width: 1000px){
+    .charactersContainer{
+        display: block;
+    }
+    .characterBlock{
+        width: 550px;
+    }
+}
+
+@media all and (max-width: 565px){
+    .characterBlock{
+        width: 100%;
+    }
+    .nameStyle{
+        margin: 5px auto 10px;
+        font-size: 16px;
+    }
+    .statusAndSpecies{
+        font-size: 14px;
+    }
+    a{
+        font-size: 12px;
+    }
+}
+
+@media all and (max-width: 450px){
+    .characterBlock{
+        width: 100%;
+    }
+    .photoStyle{
+        width: 150px;
+        border-radius:  5px 0 0 5px;
+        margin-right: 10px;
+    }
+    .infoOfCharacter{
+        max-height: 150px;
+        overflow: scroll;
+    }
+    .nameStyle{
+        margin: 5px auto 5px;
+        font-size: 15px;
+    }
+    .locationBlock{
+        margin-top: 10px;
+    }
+    .location{
+        margin-bottom: 3px;
+    }
+}

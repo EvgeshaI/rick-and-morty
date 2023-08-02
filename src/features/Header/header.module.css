@@ -1,0 +1,25 @@
+.headerStyle{
+    text-align: center;
+    font-size: 60px;
+    padding: 70px 5px;
+    background-color: #F19D38;
+}
+
+@media all and (max-width: 1000px){
+    .headerStyle{
+        padding: 50px 5px;
+        font-size: 55px;
+    }
+}
+@media all and (max-width: 950px){
+    .headerStyle{
+        padding: 30px 5px;
+        font-size: 50px;
+    }
+}
+@media all and (max-width: 535px){
+    .headerStyle{
+        padding: 20px 5px;
+        font-size: 35px;
+    }
+}
